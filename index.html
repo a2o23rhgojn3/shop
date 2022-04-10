@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOOD MUSIC</title>
+    <!-- reset -->
+    <link rel="stylesheet" href="style/vendors/reset.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Monoton&family=Noto+Sans+JP&display=swap"
+        rel="stylesheet">
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/043359d8e6.js" crossorigin="anonymous"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="style/vendors/swiper-bundle.min.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header class="main-wrapper">
+        <div id="title" class="text-align-center">
+            <h1>GOOD MUSIC</h1>
+            <div id="cart" class="icon">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+        </div>
+        <nav class="wrapper">
+            <ul class="flex flex-around">
+                <li class="under-line">TOP</li>
+                <li>R&B</li>
+                <li>SOUL</li>
+                <li>CITYPOP</li>
+            </ul>
+        </nav>
+        <div id="filter" class="flex wrapper">
+            <div class="ellipse icon text-align-center">
+                <span>フィルター</span><i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="sale" class="main-wrapper">
+            <h1 class="heading text-align-center">SALE</h1>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/no.4.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/no.5.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/no.6.png" alt=""></div>
+                </div>
+                <!-- 必要に応じてページネーション -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section id="pickup" class="main-wrapper">
+            <h1 class="heading text-align-center">PICK UP</h1>
+            <div class="products flex flex-wrap flex-around">
+                <div class="product">
+                    <div class="wrapper text-align-center">
+                        <img class="item-image" src="images/no.7.png" alt="">
+                    </div>
+                    <div class="details wrapper">
+                        <p class="price wrapper">¥1,500 (税込)</p>
+                        <div class="status wrapper grid">
+                            <div id="new" class="none ellipse text-align-center">新品</div>
+                            <div id="used" class="ellipse text-align-center">中古</div>
+                            <div id="cd" class="ellipse text-align-center">CD</div>
+                            <div id="record" class="none ellipse text-align-center">レコード</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="wrapper text-align-center">
+                        <img class="item-image" src="images/no.8.png" alt="">
+                    </div>
+                    <div class="details wrapper">
+                        <p class="price wrapper">¥1,500 (税込)</p>
+                        <div class="status wrapper grid">
+                            <div id="new" class="ellipse text-align-center">新品</div>
+                            <div id="used" class="ellipse text-align-center">中古</div>
+                            <div id="cd" class="none ellipse text-align-center">CD</div>
+                            <div id="record" class="ellipse text-align-center">レコード</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="rb" class="main-wrapper">
+            <h1 class="heading text-align-center">R&B</h1>
+            <div class="products flex flex-wrap flex-around">
+                <div class="product">
+                    <div class="wrapper text-align-center">
+                        <img class="item-image" src="images/no.7.png" alt="">
+                    </div>
+                    <div class="details wrapper">
+                        <p class="price wrapper">¥1,500 (税込)</p>
+                        <div class="status wrapper grid">
+                            <div id="new" class="ellipse text-align-center">新品</div>
+                            <div id="used" class="ellipse text-align-center">中古</div>
+                            <div id="cd" class="none ellipse text-align-center">CD</div>
+                            <div id="record" class="ellipse text-align-center">レコード</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="wrapper text-align-center">
+                        <img class="item-image" src="images/no.8.png" alt="">
+                    </div>
+                    <div class="details wrapper">
+                        <p class="price wrapper">¥1,500 (税込)</p>
+                        <div class="status wrapper grid">
+                            <div id="new" class="ellipse text-align-center">新品</div>
+                            <div id="used" class="none ellipse text-align-center">中古</div>
+                            <div id="cd" class="ellipse text-align-center">CD</div>
+                            <div id="record" class="none ellipse text-align-center">レコード</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="genre">
+                    <img src="images/no.9.png" alt="">
+                    <div class="to-genre ellipse text-align-center">R&Bジャンルを表示</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- swiper -->
+    <script src="js/vendors/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".swiper", {
+            autoplay: {
+                delay: 3000,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+
+</html>

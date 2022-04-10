@@ -1,0 +1,36 @@
+// style
+.heading {
+    font-size: 3rem;
+}
+.under-line {
+    text-decoration: underline;
+}
+.ellipse {
+    background-color: $white;
+    padding: 10px;
+    border: solid $black 2px;
+    border-radius: 50px;
+}
+// pseudo
+a:hover {
+    cursor: pointer;
+}
+// layout
+.text-align-center {
+    text-align: center;
+}
+.grid {
+    display: grid;
+}
+.flex {
+    display: flex;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-center {
+    justify-content: center;
+}
+.flex-around {
+    justify-content: space-around;
+}

@@ -1,0 +1,209 @@
+@charset "UTF-8";
+html {
+  font-size: 16px;
+  font-family: 'Anton', 'Noto Sans JP', sans-serif;
+}
+
+.main-wrapper {
+  margin: 15px;
+}
+
+.wrapper {
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.item-image {
+  width: 300px;
+  height: 300px;
+}
+
+.price {
+  font-size: 2rem;
+}
+
+.status {
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  gap: 10px;
+  justify-items: center;
+}
+
+.status #new {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+.status #used {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+.status #cd {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+.status #record {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+.status .none {
+  background-color: grey;
+}
+
+.status .ellipse {
+  width: 140px;
+  height: 50px;
+}
+
+.genre {
+  position: relative;
+}
+
+.genre .genre-image {
+  width: 100%;
+  height: 100%;
+}
+
+.genre .to-genre {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translateY(-70%) translateX(-50%);
+          transform: translateY(-70%) translateX(-50%);
+  white-space: nowrap;
+}
+
+.heading {
+  font-size: 3rem;
+}
+
+.under-line {
+  text-decoration: underline;
+}
+
+.ellipse {
+  background-color: white;
+  padding: 10px;
+  border: solid black 2px;
+  border-radius: 50px;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header #title {
+  font-family: 'Monoton', cursive;
+  position: relative;
+}
+
+header #title h1 {
+  font-size: 1.8rem;
+}
+
+header #title #cart {
+  font-size: 1.7rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+header nav ul {
+  font-size: 1.5rem;
+}
+
+.swiper {
+  margin: 10px;
+}
+
+.swiper--wrapper {
+  /* wrapperのサイズを調整 */
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 960px) {
+  html {
+    font-size: 20px;
+  }
+  .item-image {
+    width: 400px;
+    height: 400px;
+  }
+  .status .ellipse {
+    width: 200px;
+    height: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
