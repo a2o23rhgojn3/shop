@@ -13,5 +13,5 @@ CDのECサイトを作成しました。
 * PhotoShop
 
 # URL
-https://a2o23rhgojn3.github.io/shop/index.html
+https://a2o23rhgojn3.github.io/work2/index.html
 
